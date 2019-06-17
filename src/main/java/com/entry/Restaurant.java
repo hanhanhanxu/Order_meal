@@ -23,9 +23,10 @@ public class Restaurant {
         // 在静态区创建INSTANCE对象，
     }
 
-    public void getMealShow(String name){
+    public Meal getMealShow(String name){
         Meal meal = factory.getMeal(name);
         meal.show();
+        return meal;
     }
 
 
